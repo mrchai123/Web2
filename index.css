@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:25:40
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-11 18:20:48
+* @Last Modified time: 2018-12-14 17:16:10
 */
 #biggest{
 	width: 1350px;
@@ -148,7 +148,7 @@ a:hover{
 	border-top: 1px solid rgb(254,108,0);
 }
 #main1{
-	height: 123px;
+	height: 550px;
 	width: 1180px;
 	margin: 0 auto;
 	background-color: white;
@@ -221,7 +221,7 @@ a:hover{
 	color: rgb(254,108,0);
 }
 #news-move{
-	height: 323px;
+	height: 319px;
 	width: 203px;
 	border-top: 1px solid rgb(154,151,145);
 	border-bottom: 1px solid rgb(154,151,145);
@@ -241,4 +241,117 @@ a:hover{
 	float: left;
 	border-top: 2px solid rgb(254,108,0);
 	margin-top: -3px;
+}
+#phonefee{
+	height: 182px;
+	width: 209px;
+	float: left;
+	background-color: white;
+}
+#phonefee-top{
+	height: 32px;
+	width: 190px;	
+	margin-left: 15px;
+	line-height: 32px;
+	font-size: 13px;
+}
+#phonefee-input{
+	height: 22px;
+	width: 123px;
+	color: rgb(154,151,145);
+	margin-left: 15px;
+}
+#phonefee-select{
+	height: 17px;
+	width: 60px;
+	margin-left: 15px;
+	margin-top: 7px;
+}
+#phonefee-num{
+	
+	margin-left: 5px;
+	color: rgb(254,108,0);
+	margin-top: 7px;
+}
+#phonefee-pay{
+	height: 25px;
+	width: 175px;
+	background-color: rgb(254,108,0);
+	text-align: center;
+	line-height: 25px;
+	margin-top: 7px;
+	color: white;
+	cursor: pointer;
+	margin-left: 15px;
+	border-radius: 4px;
+}
+#bottom{
+	float: left;
+	width: 1180px;
+	margin-left: 85px;
+}
+#bottom-list{
+	height: 152px;
+	width: 1028px;
+	float: left;
+	margin-top: 30px;
+	border-bottom:1px solid rgb(154,151,145) ;
+}
+#bottom-list-ul{
+	list-style: none;
+	float: left;
+	padding-left: 0px;
+}
+#bottom-list-ul li{
+	margin-top: 5px;
+}
+#bottom-list-ul a{
+	color: rgb(154,151,145);
+	font-size: 13px;
+	text-decoration: none;
+}
+#bottom-list-ul a:hover{
+	color: rgb(254,108,0);
+}
+#about{
+	height: 18px;
+	margin-left: 112px;
+	float: left;
+	list-style: none;
+	padding-left: 0px;
+}
+#about li{
+	text-align: center;
+	float: left;
+	font-size: 13px;
+	line-height: 20px;
+	border-right: 1px solid rgb(154,151,145);
+}
+#about a{
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#about a:hover{
+	color: rgb(254,108,0);
+}
+#copy{
+	float: left;
+	margin-left: 350px;
+	color: rgb(154,151,145);
+	font-size: 11px;
+}
+#license{
+	float: left;
+	margin-left: 55px;
+	color: rgb(154,151,145);
+	font-size: 12px;
+	width: 1070px;
+	text-align: center;
+}
+#license-picture{
+	float: left;
+	margin-left: 285px;
+	margin-top: 10px;
 }
