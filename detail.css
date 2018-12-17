@@ -2,5 +2,368 @@
 * @Author: dell
 * @Date:   2018-12-10 20:26:16
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-10 20:26:16
+* @Last Modified time: 2018-12-15 23:05:07
 */
+/*
+* @Author: dell
+* @Date:   2018-12-10 20:25:40
+* @Last Modified by:   dell
+* @Last Modified time: 2018-12-15 19:34:36
+*/
+#biggest{
+	width: 1350px;
+	margin: 0 auto;
+}
+#top{
+	height: 130px;
+	width: 1180px;
+	margin: 0 auto;
+	background-color: rgb(255,255,255);
+}
+#top-1{
+	height: 128px;
+}
+#top-small{
+	height: 35px;
+	width: 85px;
+	color: rgb(154,151,145);
+	font-size: 12px;
+	float: left;
+	line-height: 35px;
+}
+#top-line{
+	margin-left: 359px;
+	height: 35px;
+	/* width: 730px; */
+	line-height: 35px;
+}
+#top-line-1{
+	float: left;
+	margin-left: 15px;
+	color: rgb(154,151,145);
+	text-decoration: none;
+	line-height: 35px;
+}
+#top-line-1:hover{
+	color: rgb(255,145,96);
+	text-decoration: none;
+}
+a:hover{
+	color: rgb(255,145,96);
+}
+#top-img{
+	float: left;
+}
+#search{
+	width: 580px;
+	margin-top: 19px;
+	margin-left: 105px;
+	border: 2px solid rgb(254,108,0);
+	float: left;
+	border-radius: 1%;
+}
+#search-input{
+	float: left;
+	height: 36px;
+	width: 496px;
+	line-height: 36px;
+	color: rgb(154,151,145);
+}
+#search-button{
+	height: 42px;
+	width: 80px;
+	background-color: rgb(254,108,0);
+	text-align: center;
+	line-height: 41px;
+	float: left;
+	color: white;
+	cursor: pointer;
+}
+#phone-number{
+	height: 38px;
+	width: 85px;
+	margin-top: 19px;
+	border: 1px solid  rgb(154,151,145);
+	margin-left: 85px;
+	text-align: center;
+	float: left;
+}
+#email-number{
+	height: 38px;
+	width: 85px;
+	margin-top: 19px;
+	border: 1px solid  rgb(154,151,145);
+	text-align: center;
+	float: left;
+}
+#problem{
+	height: 40px;
+	width: 85px;
+	margin-top: 19px;
+	background-color: rgb(254,108,0);
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	color: white;
+}
+#recommend{
+	height: 30px;
+	width: 583px;
+	margin-left: 251px;
+	float: left;
+}
+.choice{
+	width: 71px;
+	margin-left: 3px;
+	text-align: center;
+	font-size: 13px;
+	text-decoration: none;
+	color: rgb(154,151,145);
+	border-left: 1px solid rgb(154,145,145);
+	padding-left:5px ;
+}
+#index-ul{
+	width: 1330px;
+	height: 40px;
+	margin: 0 auto;
+	list-style: none;
+	background-color: rgb(0,0,0);
+	padding-left:0px ;
+}
+#index-ul li{
+	float: left;
+	width: 96px;
+	text-align: center;
+	margin-left: 26px;
+	line-height: 40px;
+	background-color: rgb(0,0,0);
+}
+#index-ul li:hover{
+	background-color: rgb(254,13,74);
+}
+#index-ul a{
+	color: white;
+	text-decoration: none;
+}
+#main{
+	height: 780px;
+	width: 1330px;
+	margin: 0 auto;
+	background-color: rgb(246,245,244);
+}
+#main-location{
+	height: 36px;
+	width: 520px;
+	line-height: 36px;
+	margin-left: 85px;
+	font-size: 13px;
+	float: left;
+}
+#main-middle{
+	height: 633px;
+	width: 998px;
+	background-color: rgb(255,255,255);
+	float: left;
+	margin-left: 85px;
+}
+#main-middle-img{
+	height: 410px;
+	width: 410px;
+	border: 1px solid rgb(208,205,199);
+	float: left;
+	margin-left: 18px;
+	margin-top: 18px;
+}
+#main-middle-right{
+	float: left;
+	margin-left: 18px;
+	margin-top: 18px;
+}
+#main-img-right{
+	float: left;
+	margin-left: 6px;
+}
+#main-img-bottom{
+	float: left;
+	margin-left: 85px;
+}
+#volume-left{
+	height:28px;
+	width: 62px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 29px;
+	float: left;
+}
+#volume-right{
+	height:28px;
+	width: 62px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 29px;
+	float: left;
+}
+.volume-style1{
+	
+}
+.volume-style2{
+	border: 1px solid rgb(254,10,82);
+	background: url(img/duigou.png);
+	background-repeat: no-repeat;
+	background-position: 50px 16px;
+}
+#num-reduce{
+	height: 28px;
+	width: 25px;
+	border: 1px solid rgb(206,203,197);
+	text-align: center;
+	line-height: 28px;
+	float: left;
+	cursor: pointer;
+}
+#num-add{
+	height: 28px;
+	width: 25px;
+	border: 1px solid rgb(206,203,197);
+	text-align: center;
+	line-height: 28px;
+	float: left;
+	cursor: pointer;
+}
+#num-input{
+	height: 26px;
+	width: 50px;
+	border: 1px solid rgb(206,203,197);
+	text-align: center;
+	line-height: 28px;
+	float: left;
+}
+#num-choice{
+	height: 30px;
+	font-size: 18px;
+	margin-left: 15px;
+	line-height: 30px;
+	color: rgb(254,108,0);
+}
+#buy{
+	height: 40px;
+	width: 150px;
+	border: 1px solid rgb(254,10,82);
+	line-height: 40px;
+	color: rgb(254,10,82);
+	font-size: 18px;
+	text-align: center;
+	float: left;
+	margin-left: 45px;
+	border-radius: 4px;
+}
+#shopping-cart{
+	height: 40px;
+	width: 150px;
+	line-height: 40px;
+	background-color: rgb(254,10,82);
+	color: rgb(255,255,255);
+	font-size: 18px;
+	text-align: center;
+	float: left;
+	margin-left: 22px;
+	border-radius: 4px;
+}
+#img-choice{
+	height: 60px;
+	width: 410px;
+}
+#img-choice-style{
+	height: 58px;
+	width:58px;
+	float: left;
+	cursor: pointer;
+}
+.img-choice-style{
+	
+}
+.img-choice-style1{
+	border: 2px solid rgb(254,108,0);
+}
+#bottom{
+	float: left;
+	width: 1180px;
+	margin-left: 85px;
+}
+#bottom-list{
+	height: 152px;
+	width: 1028px;
+	float: left;
+	margin-top: 30px;
+	border-bottom:1px solid rgb(154,151,145) ;
+}
+#bottom-list-ul{
+	list-style: none;
+	float: left;
+	padding-left: 0px;
+}
+#bottom-list-ul li{
+	margin-top: 5px;
+}
+#bottom-list-ul a{
+	color: rgb(154,151,145);
+	font-size: 13px;
+	text-decoration: none;
+}
+#bottom-list-ul a:hover{
+	color: rgb(254,108,0);
+}
+#about{
+	height: 18px;
+	margin-left: 112px;
+	float: left;
+	list-style: none;
+	padding-left: 0px;
+}
+#about li{
+	text-align: center;
+	float: left;
+	font-size: 13px;
+	line-height: 20px;
+	border-right: 1px solid rgb(154,151,145);
+}
+#about a{
+	color: black;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#about a:hover{
+	color: rgb(254,108,0);
+}
+#copy{
+	float: left;
+	margin-left: 350px;
+	color: rgb(154,151,145);
+	font-size: 11px;
+}
+#license{
+	float: left;
+	margin-left: 55px;
+	color: rgb(154,151,145);
+	font-size: 12px;
+	width: 1070px;
+	text-align: center;
+}
+#license-picture{
+	float: left;
+	margin-left: 285px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

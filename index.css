@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:25:40
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-14 17:16:10
+* @Last Modified time: 2018-12-16 23:02:25
 */
 #biggest{
 	width: 1350px;
@@ -13,6 +13,7 @@
 	width: 1180px;
 	margin: 0 auto;
 	background-color: rgb(255,255,255);
+	position: static;
 }
 #top-1{
 	height: 128px;
@@ -141,6 +142,11 @@ a:hover{
 #classify a:hover{
 	color: rgb(254,108,0);
 }
+.exchange{
+	background: url(img/hot.gif);
+	background-repeat: no-repeat;
+	background-position: 75px -2px;
+}
 #main{
 	width: 1350px;
 	background-color: rgb(248,247,245);
@@ -199,12 +205,55 @@ a:hover{
 	overflow: hidden;
 	float: left;
 }
+#animate-left{
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 180px;
+	background: url(img/btn.gif) no-repeat;
+	background-position: 0px 0px;
+	cursor: pointer;
+}
+#animate-right{
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 735px;
+	background: url(img/btn.gif) no-repeat;
+	background-position: 0px -60px;
+	cursor: pointer;
+}
+.nav{
+	position: absolute;
+	margin-left: 328px;
+	margin-top: 321px;
+	list-style: none;
+	padding-left: 0px;
+}
+.nav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	font-size: 13px;
+}
+.nav .active{
+	background-color: rgb(254,108,0);
+}
 #animate-ul{
-	width: 5000px;
+	width: 6400px;
 	text-decoration: none;
 	padding-left: 0px;
 	margin-top: 0px;
-	float: left;
+	position: relative;
+	list-style: none;
 }
 #animate-ul li{
 	float: left;
@@ -213,6 +262,9 @@ a:hover{
 	height: 366px;
 	width: 208px;
 	background-color: white;
+	/* position: relative;
+	margin-left: 973px;
+	margin-top: -360px; */
 	float: left;
 }
 #news{
@@ -230,6 +282,8 @@ a:hover{
 .news-ul{
 	list-style: none;
 	padding-left: 15px;
+	position: relative;
+	top: 0px;
 }
 .news-ul li{
 	height: 28px;
@@ -355,3 +409,96 @@ a:hover{
 	margin-left: 285px;
 	margin-top: 10px;
 }
+#right{
+	height: 510px;
+	width: 120px;
+	position: fixed;
+	margin-left: 1230px;
+	/* margin-right: 20px; */
+	list-style: none;
+	padding-left: 0px;
+}
+#right-first{
+	width: 120px;
+	cursor: pointer;
+	position: relative;
+	padding-top: 1px;
+	right: 0px;
+}
+#right-first-top{
+	width:120px;
+	height:60px;
+	background: url(img/consult-s.png) no-repeat ;
+	background-position: 76px 1px;
+}
+#right-first-bottom{
+	width:120px;
+	height:45px;
+	background:url(img/xiaobang.png) no-repeat;
+	background-position: 77px 0px;
+}
+#right-second{
+	height: 140px;
+	width: 120px;
+	background: url(img/youhui.png) no-repeat;
+	background-position: 79px 0px;
+	margin-top: 4px;
+	cursor: pointer;
+	position: relative;
+	right: 0px;
+	overflow: hidden;
+}
+#setup{
+	height: 140px;
+	width: 60px;
+	background-color: red;
+	margin-left: 120px;
+	float: left;
+	background-color: rgb(255,156,97);
+}
+#right-third{
+	height: 140px;
+	width: 120px;
+	margin-top: 4px;
+	cursor: pointer;
+	position: relative;
+	right: 0px;
+}
+#right-third-top{
+	height: 50px;
+	width: 120px;
+	background: url(img/app.png) no-repeat;
+	background-position: 79px 0px;
+}
+#right-third-bottom{
+	height: 90px;
+	width: 41px;
+	margin-left: 79px;
+	background: url(img/serwei.png) no-repeat;
+	background-color: rgb(255,146,96);
+	background-position: 11px 43px;
+}
+#right-fourth{
+	height: 140px;
+	width: 120px;
+	margin-top: 4px;
+	background: url(img/cart.png) no-repeat;
+	background-position: 79px 0px ;
+	cursor: pointer;
+	position: relative;
+	right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
