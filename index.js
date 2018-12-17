@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:26:00
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-16 23:02:51
+* @Last Modified time: 2018-12-17 18:58:18
 */
 window.onload=function(){
 	var top=document.getElementById('top');
@@ -86,6 +86,10 @@ function animate(obj,json,callback){
 				navmove();
 				animate(slider,{left:-800*index});
 			}
+			oNavlist[i].onousedown=function(){
+			var e=e||window.event;
+			e.preventDefault();
+		}
 		}
 		function next(){
 			if(isMoving){
@@ -161,100 +165,165 @@ function animate(obj,json,callback){
 
 		var flag=0;
 		var first=document.getElementById('right-first');
-		var firstTop=document.getElementById('right-first-top');
-		var firstBottom=document.getElementById('right-first-bottom');
 		first.onmouseover=function(){
 			if(flag==0){
 				flag=1;
 				var timer=setInterval(function(){
-					var top=parseInt(getStyle(firstTop,'background-position'));
-					var bottom=parseInt(getStyle(firstBottom,'background-position'));
-					if(top==0){
+					var left=parseInt(getStyle(first,'left'));
+					if(left==0){
 						flag=2;
-						firstTop.style.backgroundPosition=0+"px "+1+"px";
-						firstBottom.style.backgroundPosition=0+"px "+0+"px";
+						first.style.left=0+"px";
 						clearInterval(timer);
 					}else{
-						top--;
-						bottom--;
-						firstTop.style.backgroundPosition=top+"px "+1+"px";
-						firstBottom.style.backgroundPosition=bottom+"px "+0+"px";
+						left--;
+						first.style.left=left+"px";
 					}
 			}, 0.001)
 			}	
 		}
 		first.onmouseout=function(){
-			firstTop.style.backgroundPosition=0+"px "+1+"px";
-			firstBottom.style.backgroundPosition=0+"px "+0+"px";
-			var top=parseInt(getStyle(firstTop,'background-position'));
-			if(flag=2&&top==0)
+			first.style.left=0+"px";
+			var left=parseInt(getStyle(first,'left'));
+			if(flag==2&&left==0)
 			{
 				var timer=setInterval(function(){
-					var top=parseInt(getStyle(firstTop,'background-position'));
-					var bottom=parseInt(getStyle(firstBottom,'background-position'));
-					if(top==78){
-						firstTop.style.backgroundPosition=78+"px "+1+"px";
-						firstBottom.style.backgroundPosition=79+"px "+0+"px";
+					var left=parseInt(getStyle(first,'left'));
+					if(left==77){
+						first.style.left=77+"px";
 						clearInterval(timer);
 						flag=0;
 					}else{
-						top++;
-						bottom++;
-						firstTop.style.backgroundPosition=top+"px "+1+"px";
-						firstBottom.style.backgroundPosition=bottom+"px "+0+"px";
+						left++;
+						first.style.left=left+"px";
 					}
 				}, 0.001)
 			}
 		}
 		var second=document.getElementById('right-second');
-		var setup=document.createElement('div');
-		setup.id="setup";
-		second.appendChild(setup);
 		second.onmouseover=function(){
 			if(flag==0){
 				flag=1;
 				var timer=setInterval(function(){
-					var top=parseInt(getStyle(second,'background-position'));
-					var set=parseInt(getStyle(setup,'margin-left'));
-					if(top==0){
+					var left=parseInt(getStyle(second,'left'));
+					if(left==0){
 						flag=2;
-						second.style.backgroundPosition=0+"px "+0+"px";
-						setup.style.marginLeft=60+"px";
+						second.style.left=0+"px";
 						clearInterval(timer);
 					}else{
-						top--;
-						set--;
-						if(set<60){
-							setup.style.marginLeft=60+"px";
-						}else{
-							setup.style.marginLeft=set+"px";
-						}
-						second.style.backgroundPosition=top+"px "+0+"px";
-						console.log(setup.style.marginLeft);
+						left--;
+						second.style.left=left+"px";
 					}
 			}, 0.001)
 			}	
 		}
 		second.onmouseout=function(){
-			second.style.backgroundPosition=0+"px "+0+"px";
-			setup.style.marginLeft=60+"px";
-			var top=parseInt(getStyle(second,'background-position'));
-			var set=parseInt(getStyle(setup,'margin-left'));
-			if(flag=2&&top==0)
+			second.style.left=0+"px";
+			var left=parseInt(getStyle(second,'left'));
+			if(flag==2&&left==0)
 			{
 				var timer=setInterval(function(){
-					var top=parseInt(getStyle(second,'background-position'));
-					if(top==79){
-						second.style.backgroundPosition=79+"px "+0+"px";
-						setup.style.marginLeft=120+"px";
+					var left=parseInt(getStyle(second,'left'));
+					console.log(left);
+					if(left==77){
+						second.style.left=77+"px";
 						clearInterval(timer);
 						flag=0;
 					}else{
-						top++;
-						set++;
-						second.style.backgroundPosition=top+"px "+0+"px";
-						setup.style.marginLeft=set+"px";
+						left++;
+						second.style.left=left+"px";
 					}
 				}, 0.001)
 			}
 		}
+		var third=document.getElementById('right-third');
+		var bottom=document.getElementById('right-third-bottom');
+		var middle=document.getElementById('right-third-middle');
+		middle.style.background='rgb(255,156,97)';
+		third.onmouseover=function(){
+			if(flag==0){
+				flag=1;
+				var timer=setInterval(function(){
+					var left=parseInt(getStyle(third,'left'));
+					if(left==0){
+						flag=2;
+						third.style.left=0+"px";						
+						bottom.style.backgroundPosition=500+"px "+0+"px";
+						middle.style.background='url(img/erwei.png)';
+						clearInterval(timer);
+					}else{
+						left--;
+						third.style.left=left+"px";
+					}
+			}, 0.001)
+			}	
+		}
+		third.onmouseout=function(){
+			third.style.left=0+"px";
+			var left=parseInt(getStyle(third,'left'));
+			if(flag==2&&left==0)
+			{
+				var timer=setInterval(function(){
+					var left=parseInt(getStyle(third,'left'));
+					console.log(left);
+					if(left==77){
+						third.style.left=77+"px";
+						bottom.style.backgroundPosition=10+"px "+43+"px";
+						middle.style.background='rgb(255,156,97)';
+						clearInterval(timer);
+						flag=0;
+					}else{
+						left++;
+						third.style.left=left+"px";
+					}
+				}, 0.001)
+			}
+		}
+		var fourth=document.getElementById('right-fourth');
+		fourth.onmouseover=function(){
+			if(flag==0){
+				flag=1;
+				var timer=setInterval(function(){
+					var left=parseInt(getStyle(fourth,'left'));
+					if(left==0){
+						flag=2;
+						fourth.style.left=0+"px";
+						clearInterval(timer);
+					}else{
+						left--;
+						fourth.style.left=left+"px";
+					}
+			}, 0.001)
+			}	
+		}
+		fourth.onmouseout=function(){
+			fourth.style.left=0+"px";
+			var left=parseInt(getStyle(fourth,'left'));
+			if(flag==2&&left==0)
+			{
+				var timer=setInterval(function(){
+					var left=parseInt(getStyle(fourth,'left'));
+					console.log(left);
+					if(left==77){
+						fourth.style.left=77+"px";
+						clearInterval(timer);
+						flag=0;
+					}else{
+						left++;
+						fourth.style.left=left+"px";
+					}
+				}, 0.001)
+			}
+		}
+		var phone=document.getElementById('phonefee-select');
+		var phonefeeNum=document.getElementById('phonefee-num');
+		for(i=1;i<=10;i++){
+       		var option=document.createElement('option');
+       		var str=i;
+       		option.value=str*10;
+       		option.innerHTML=str*10;
+       		phone.appendChild(option);
+       	}
+       	phone.onchange=function(){
+       		phonefeeNum.innerHTML="¥"+phone.value;
+       		console.log(phonefeeNum);
+       	}
