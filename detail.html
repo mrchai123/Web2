@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>详情页</title>
 	<link rel="stylesheet" type="text/css" href="detail.css">
-	<script src="index.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id="biggest">
@@ -76,8 +75,12 @@
 			</div>
 			<div id="main-middle">
 				<div id="main-middle-img">
-					<img src="img/pp0.jpeg" alt="">
+					<img src="img/pp0.jpeg" id="main-img" alt="">
+					<div id="slider"></div>
 				</div>
+				<div id="img2">
+        			<img src="img/pp0.jpeg"  id="Bimg">
+    			</div>
 				<div id="main-middle-right">
 					<div style="height:23px;line-height:23px;">韩国&nbspRE:CIPE&nbsp水晶清爽防水防晒喷雾SPF50&nbsp150ml/瓶</div>
 					<div style="height:45px;width:470px;line-height:23px;color:rgb(154,151,145);font-size:12px;">【限购3件】&nbsp超透明无痕防晒，防水防汗定妆，保温降温不粘腻。水晶防晒喷雾，喷后皮肤水润，不油，不留白更不会像防晒霜那样抹不开，非常实用，开始存货吧。</div>
@@ -99,12 +102,23 @@
 					<div style="margin-left:107px;height:30px;line-height: 30px;">您已选择<span id="num-choice">"150ml"</span></div>
 					<div id="buy">立即预定</div>
 					<div id="shopping-cart">加入购物车</div>
+					<div id="cover">
+						<div id="back">
+							
+						</div>
+						<div id="cart">
+							<div id="cart-top">X</div>
+							<div id="cart-middle"><img src="img/rr11_02.jpg" alt=""></div>
+							<div id="cart-bottom-left">继续购物</div>
+							<div id="cart-bottom-right">去购物车结算</div>
+						</div>
+					</div>
 				</div>
 				<div id="img-choice">
-					<span style="float: left;cursor: pointer;"><img src="img/spanl.jpg" alt=""></span>
-					<div id="img-choice-style" class="img-choice-style1"><img src="img/sp0.jpeg" alt=""></div>
-					<div id="img-choice-style" class="img-choice-style"><img src="img/sp1.jpeg" alt=""></div>
-					<span style="margin-left:225px;float: left;cursor: pointer;"><img src="img/spanr.jpg" alt=""></span>
+					<span id="move-left" style="float: left;cursor: pointer;"><img src="img/spanl.jpg" alt=""></span>
+					<div id="img-choice-left" class="img-choice-style1"><img src="img/sp0.jpeg" alt=""></div>
+					<div id="img-choice-right" class="img-choice-style"><img src="img/sp1.jpeg" alt=""></div>
+					<span id="move-right" style="margin-left:225px;float: left;cursor: pointer;"><img src="img/spanr.jpg" alt=""></span>
 				</div>
 			</div>
 			<div id="main-img-right"><img src="img/ww_07.jpg" alt=""></div>
@@ -182,5 +196,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="detail.js" type="text/javascript"></script>
 </body>
 </html>

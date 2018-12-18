@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:25:40
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-17 19:49:50
+* @Last Modified time: 2018-12-18 11:08:38
 */
 #biggest{
 	width: 1350px;
@@ -500,8 +500,49 @@ a:hover{
 	position: relative;
 	left: 77px;
 }
-
-
+#cover{
+	display: none;
+}
+#cart{
+	height: 220px;
+	width: 400px;
+	border: 2px solid rgb(172,169,211);
+	display: none;
+}
+#cart-top{
+	margin-left:375px;
+	margin-top:15px;
+}
+#cart-middle{
+	margin-left:70px;
+	margin-top:25px;
+}
+#cart-bottom-left{
+	width:150px;
+	height:40px;
+	border:1px solid rgb(255,7,84);
+	float:left;
+	margin-top:40px;
+	border-radius:5px;
+	margin-left:28px;
+	line-height: 40px;
+	text-align: center;
+	color:rgb(255,7,84);
+	cursor:pointer;
+}
+#cart-bottom-right{
+	width:150px;
+	height:40px;
+	border-radius:5px;
+	margin-top:40px;
+	float:left;
+	margin-left:28px;
+	line-height: 40px;
+	text-align: center;
+	color:white;
+	background-color:rgb(255,7,84);
+	cursor:pointer;
+}
 
 
 
