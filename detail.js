@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:26:29
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-18 12:33:11
+* @Last Modified time: 2018-12-18 13:25:02
 */
 function getStyle(obj, attr){
 	if(obj.currentStyle){
@@ -109,6 +109,12 @@ moveRight.onclick=function(){
 			input.innerHTML="5";
 			console.log(input);
 		}
+		if(parseInt(input.value)<5){
+			add.style.cursor="pointer";
+		}
+		if(parseInt(input.value)>1){
+			reduce.style.cursor="pointer";
+		}
 	}
 	reduce.onclick=function(){
 		if(num<1){
@@ -116,7 +122,7 @@ moveRight.onclick=function(){
 		}else{
 			num--;
 			input.value=num;
-			input.innerHTML=num
+			input.innerHTML=num;
 		}
 	}
 	add.onclick=function(){
@@ -126,6 +132,7 @@ moveRight.onclick=function(){
 			num++;
 			input.value=num;
 			input.innerHTML=num;
+			add.style.cursor="pointer";
 		}
 	}
 	var cartX=document.getElementById('cart-top');

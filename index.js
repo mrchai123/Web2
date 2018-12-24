@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:26:00
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-17 18:58:18
+* @Last Modified time: 2018-12-21 18:30:43
 */
 window.onload=function(){
 	var top=document.getElementById('top');
@@ -66,13 +66,16 @@ function animate(obj,json,callback){
 		var li=0;
 		var timer;
 		var isMoving = false;
-		slider.style.left=-800+"px";
+		slider.style.marginLeft=-800+"px";
+		left.style.opacity=0;
+		right.style.opacity=0;
 		box.onmouseover = function(){
-			animate(left,{opacity:50})
-			animate(right,{opacity:50})
+			animate(left,{opacity:90})
+			animate(right,{opacity:90})
 			clearInterval(timer)
 		}
 		box.onmouseout = function(){
+			clearInterval(timer);
 			animate(left,{opacity:0})
 			animate(right,{opacity:0})
 			timer = setInterval(next, 3000);
@@ -84,7 +87,7 @@ function animate(obj,json,callback){
 			oNavlist[i].onclick = function(){
 				index = this.index+1;
 				navmove();
-				animate(slider,{left:-800*index});
+				animate(slider,{marginLeft:-800*index});
 			}
 			oNavlist[i].onousedown=function(){
 			var e=e||window.event;
@@ -98,9 +101,9 @@ function animate(obj,json,callback){
 			isMoving = true;
 			index++;
 			navmove();
-			animate(slider,{left:-800*index},function(){
+			animate(slider,{marginLeft:-800*index},function(){
 				if(index==7){
-					slider.style.left = -800+'px';
+					slider.style.marginLeft = -800+'px';
 					index = 1;
 				}
 				isMoving = false;
@@ -113,9 +116,9 @@ function animate(obj,json,callback){
 			isMoving = true;
 			index--;
 			navmove();
-			animate(slider,{left:-800*index},function(){
+			animate(slider,{marginLeft:-800*index},function(){
 				if(index==0){
-					slider.style.left = -4800 +'px';
+					slider.style.marginLeft = -4800 +'px';
 					index = 6;
 				}
 				isMoving = false;
@@ -136,20 +139,21 @@ function animate(obj,json,callback){
 		timer = setInterval(next, 3000);
 		function up(obj){
 			if(num==380){
-				obj.style.top=-16+"px";
+				obj.style.marginTop=-16+"px";
 				num=16;
 			}
 			num++;
-			obj.style.top=-num+"px";
+			obj.style.marginTop=-num+"px";
 		}
 		var num=0;
 		var news=document.getElementById('news-ul');
 		var news1=document.getElementById('news-move');
-		news.style.top=0+"px";
+		news.style.marginTop=0+"px";
 		var timer1=setInterval(function(){
 			up(news);
 		}, 10);
 		news1.onmouseout=function(){
+			clearInterval(timer);
 			timer1=setInterval(function(){
 			up(news);
 		}, 10);

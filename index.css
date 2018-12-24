@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:25:40
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-18 11:08:38
+* @Last Modified time: 2018-12-21 18:28:29
 */
 #biggest{
 	width: 1350px;
@@ -219,16 +219,16 @@ a:hover{
 	height: 60px;
 	width: 60px;
 	position: relative;
-	margin-top: 180px;
-	margin-left: 735px;
+	left: 730px;
+	top: -60px;
 	background: url(img/btn.gif) no-repeat;
 	background-position: 0px -60px;
 	cursor: pointer;
 }
 .nav{
-	position: relative;
-	margin-left: 328px;
-	margin-top: 321px;
+	float: left;
+	margin-left: 270px;
+	margin-top: -45px;
 	list-style: none;
 	padding-left: 0px;
 }
@@ -252,10 +252,13 @@ a:hover{
 	text-decoration: none;
 	padding-left: 0px;
 	margin-top: 0px;
-	position: relative;
+	float: left;
 	list-style: none;
 }
 #animate-ul li{
+	float: left;
+}
+#animate-ul a{
 	float: left;
 }
 #animate-up{
@@ -282,9 +285,8 @@ a:hover{
 .news-ul{
 	list-style: none;
 	padding-left: 15px;
-	position: relative;
 	float: left;
-	top: 0px;
+	margin-top: 0px;
 }
 .news-ul li{
 	height: 28px;
@@ -500,49 +502,7 @@ a:hover{
 	position: relative;
 	left: 77px;
 }
-#cover{
-	display: none;
-}
-#cart{
-	height: 220px;
-	width: 400px;
-	border: 2px solid rgb(172,169,211);
-	display: none;
-}
-#cart-top{
-	margin-left:375px;
-	margin-top:15px;
-}
-#cart-middle{
-	margin-left:70px;
-	margin-top:25px;
-}
-#cart-bottom-left{
-	width:150px;
-	height:40px;
-	border:1px solid rgb(255,7,84);
-	float:left;
-	margin-top:40px;
-	border-radius:5px;
-	margin-left:28px;
-	line-height: 40px;
-	text-align: center;
-	color:rgb(255,7,84);
-	cursor:pointer;
-}
-#cart-bottom-right{
-	width:150px;
-	height:40px;
-	border-radius:5px;
-	margin-top:40px;
-	float:left;
-	margin-left:28px;
-	line-height: 40px;
-	text-align: center;
-	color:white;
-	background-color:rgb(255,7,84);
-	cursor:pointer;
-}
+
 
 
 
