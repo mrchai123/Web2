@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:26:29
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-18 13:25:02
+* @Last Modified time: 2018-12-24 10:17:56
 */
 function getStyle(obj, attr){
 	if(obj.currentStyle){
@@ -104,19 +104,16 @@ moveRight.onclick=function(){
 	var input=document.getElementById('num-input');
 	var num=parseInt(input.value);
 	input.onchange=function(){
-		if(parseInt(input.value)>5){
+		num=parseInt(input.value);
+		if(num>5){
 			input.value=5;
 			input.innerHTML="5";
 			console.log(input);
 		}
-		if(parseInt(input.value)<5){
-			add.style.cursor="pointer";
-		}
-		if(parseInt(input.value)>1){
-			reduce.style.cursor="pointer";
-		}
 	}
+
 	reduce.onclick=function(){
+		add.style.cursor="pointer";
 		if(num<1){
 			reduce.style.cursor="not-allowed";
 		}else{
@@ -126,6 +123,7 @@ moveRight.onclick=function(){
 		}
 	}
 	add.onclick=function(){
+		reduce.style.cursor="pointer";
 		if(num>=5){
 			add.style.cursor="not-allowed";
 		}else{
