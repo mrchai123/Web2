@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:26:29
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-24 10:17:56
+* @Last Modified time: 2018-12-27 21:59:03
 */
 function getStyle(obj, attr){
 	if(obj.currentStyle){
@@ -58,8 +58,10 @@ moveRight.onclick=function(){
     img1.onmousemove=function(ev){
 		var ev=ev||event;
 		  
+		var a=document.documentElement.scrollTop||document.body.scrollTop;
+		console.log(a);
 		var oL=ev.clientX-box.offsetLeft-slider.offsetWidth/2;
-		var oT=ev.clientY-box.offsetTop-slider.offsetHeight/2;
+		var oT=ev.clientY-box.offsetTop-slider.offsetHeight/2+a;
 
 		var oMaxw=img1.offsetWidth-slider.offsetWidth;
 		var oMaxh=img1.offsetHeight-slider.offsetHeight;
@@ -70,6 +72,7 @@ moveRight.onclick=function(){
 		slider.style.left = oL+'px';
 		slider.style.top = oT+'px' ;
 		var Bimg = document.getElementById("Bimg");
+
 		Bimg.src=img.src;
 		Bimg.style.width=820+"px";
 		Bimg.style.height=820+"px";

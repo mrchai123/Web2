@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:25:40
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-21 18:28:29
+* @Last Modified time: 2018-12-24 11:14:19
 */
 #biggest{
 	width: 1350px;
@@ -178,7 +178,7 @@ a:hover{
 	height: 30px;
 	float: left;
 	margin-top: 3px;
-	margin-left: 10px;
+	margin-left: 9px;
 	font-size: 13px;
 }
 #service{
