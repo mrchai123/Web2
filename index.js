@@ -2,11 +2,13 @@
 * @Author: dell
 * @Date:   2018-12-10 20:26:00
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-21 18:30:43
+* @Last Modified time: 2018-12-28 21:42:34
 */
 window.onload=function(){
 	var top=document.getElementById('top');
 	var right=document.getElementById('right');
+	var inner=document.getElementById('inner');
+	inner.style.marginTop=0+"px";
 	window.onscroll=function(){
 		var a=document.documentElement.scrollTop||document.body.scrollTop;
 		if(a>180){
@@ -14,10 +16,12 @@ window.onload=function(){
 			top.style.top=0+"px";
 			top.style.width=1350+"px";
 			top.style.paddingLeft=85+"px";
-			right.style.marginTop=130+"px";
+			right.style.marginTop=-15+"px";
+			inner.style.marginTop=150+"px";
 		}else{
 			top.style.position='static';
 			right.style.marginTop=0+"px";
+			inner.style.marginTop=0+"px";
 		}
 	}
 }
@@ -205,6 +209,7 @@ function animate(obj,json,callback){
 		}
 		var second=document.getElementById('right-second');
 		second.onmouseover=function(){
+			console.log("on");
 			if(flag==0){
 				flag=1;
 				var timer=setInterval(function(){
@@ -221,13 +226,13 @@ function animate(obj,json,callback){
 			}	
 		}
 		second.onmouseout=function(){
+			console.log("out");
 			second.style.left=0+"px";
 			var left=parseInt(getStyle(second,'left'));
 			if(flag==2&&left==0)
 			{
 				var timer=setInterval(function(){
 					var left=parseInt(getStyle(second,'left'));
-					console.log(left);
 					if(left==77){
 						second.style.left=77+"px";
 						clearInterval(timer);
