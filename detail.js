@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2018-12-10 20:26:29
 * @Last Modified by:   dell
-* @Last Modified time: 2018-12-27 21:59:03
+* @Last Modified time: 2019-01-05 12:56:52
 */
 function getStyle(obj, attr){
 	if(obj.currentStyle){
@@ -95,7 +95,7 @@ moveRight.onclick=function(){
 	volumeLeft.onclick=function(){
 		volumeLeft.className="volume-style2";
 		volumeRight.className="volume-style1";
-		numChoice.innerHTML="150ml";
+		numChoice.innerHTML='"150ml"';
 	}
 	volumeRight.onclick=function(){
 		volumeLeft.className="volume-style1";
@@ -111,7 +111,7 @@ moveRight.onclick=function(){
 		if(num>5){
 			input.value=5;
 			input.innerHTML="5";
-			console.log(input);
+			num=5;
 		}
 	}
 
